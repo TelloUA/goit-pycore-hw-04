@@ -21,8 +21,7 @@ def total_salary(file_path: str):
             # check find and valid value
             if data is None or data[2] == '':
                 return None, None
-            parts = line.split(',')
-            total += (int)(parts[1])
+            total += (int)(data[2])
             counter += 1
     average = total / counter
 
